@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'vaibhavdockerhubcred') {
+    docker.withRegistry('https://registry.hub.docker.com', 'vaibhavdockerhub') {
 
         def customImage = docker.build("vaibhavvdo1/jenkins-repo")
 
